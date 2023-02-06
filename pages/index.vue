@@ -1,20 +1,5 @@
 <template>
   <div>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <NuxtLink to="/"> Home</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/products"> Products</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/about"> About Us</NuxtLink>
-          </li>
-        </ul>
-      </nav>
-    </header>
     <h1>Home</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam amet
