@@ -12,11 +12,6 @@
 <script setup lang="ts"></script>
 
 <style lang="scss" scoped>
-div {
-  margin: 0 auto;
-  padding: 1rem 2rem;
-}
-
 h1 {
   font-size: 2rem;
   color: rgb(34, 207, 149);

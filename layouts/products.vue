@@ -1,4 +1,4 @@
-<!-- default.vue means default layout -->
+<!-- file name does not matter here as you need to insert it manually -->
 
 <template>
   <div>

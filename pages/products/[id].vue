@@ -30,6 +30,10 @@
 
 <script setup lang="ts">
 const { id } = useRoute().params;
+
+definePageMeta({
+  layout: "products",
+});
 </script>
 
 <style lng="css" scoped></style>
