@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.rato {
-  color: red;
+.card {
+  @apply rounded-lg shadow-md  p-4 m-2   dark:bg-gray-700;
+}
+
+.btn {
+  @apply rounded-md px-2 py-1 m-2 bg-green-200;
 }
