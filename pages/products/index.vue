@@ -1,12 +1,10 @@
 <template>
   <h3 class="text-lg font-bold">Product</h3>
 
-  <div class="grid grid-cols-4 gap-4">
-    <div v-for="product in products" class="">
-      <span>
-        {{ product?.title }}
-      </span>
-    </div>
+  <div
+    class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-stretch place-content-stretch"
+  >
+    <ProductCard v-for="product in data" :product="product" />
   </div>
 </template>
 
