@@ -22,6 +22,17 @@ const products: typeof productT[] = Array.isArray(data)
       title: data.title;
     })
   : [];
+
+// This add the meta information Method: 1
+useHead({
+  title: "Best Products",
+  meta: [
+    {
+      name: "description",
+      content: "Product,product, product",
+    },
+  ],
+});
 </script>
 
 <style lang="sass" scoped></style>
