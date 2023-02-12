@@ -16,4 +16,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ["@urql/vue"],
   },
+  runtimeConfig: {
+    currencyKey: process.env.CURRENCY_API_KEY,
+  },
 });

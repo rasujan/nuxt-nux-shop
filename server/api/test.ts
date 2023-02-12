@@ -6,7 +6,7 @@ export default defineEventHandler(async (event): Promise<any> => {
   // const { data } = await readBody(event);
 
   // handling api class with keys
-  const { data: currency } = await $fetch(
+  const { data: currency }: { data: {} } = await $fetch(
     "https://api.currencyapi.com/v3/latest?apikey=jfwJn6gMf565HI6gUdHFBH62ksfQOKFDRIy5tESc"
   );
 
