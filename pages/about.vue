@@ -1,19 +1,14 @@
 <template>
   <div>
     <h1 class="rato">About</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam amet
-      eveniet quo eligendi eius assumenda sed harum doloribus fugiat! Ad sint
-      harum nam porro dicta fuga veritatis aliquam aliquid sed.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam amet
-      eveniet quo eligendi eius assumenda sed harum doloribus fugiat! Ad sint
-      harum nam porro dicta fuga veritatis aliquam aliquid sed.
-    </p>
+    <p>{{ data?.message }}</p>
+
+    <p>{{ data?.currency }}</p>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { data } = await useFetch(`/api/test?user=rasujan`);
+</script>
 
 <style lang="scss" scoped></style>

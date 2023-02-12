@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { Title } from "~~/.nuxt/components";
+import { productT } from "~~/utils/types";
 
 definePageMeta({
   layout: "products",
@@ -20,18 +20,21 @@ const { id } = route.params;
 
 const url = `http://fakestoreapi.com/products/${id}`;
 
-const product: typeof productT = useState("product", () => ({
-  title: "Initialized",
-}));
+let product: productT = {
+  title: "loading...",
+  description: "loading...",
+  price: "loading...",
+  image: "loading...",
+};
 
 await useFetch(url, {
   onResponse({ response }) {
-    return product({
+    product = {
       title: response._data.title,
       description: response._data.description,
       price: response._data.price,
       image: response._data.image,
-    });
+    };
   },
 });
 
